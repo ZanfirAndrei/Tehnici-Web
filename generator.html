@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="generator.css">
+</head>
+<body>
+    
+    <div id="generatorContainer" class="container">
+        <header>
+            <h1>Secret Santa Generator</h1>
+        </header>
+        <nav >
+            <hr>
+            <label id="Welcome"  class="label">Welcome</label>
+            <label id="lNumeCon" class="label"></label> |
+            <button id ="btnLogOut" type="button" name="logOut" onclick="onLogOut()" >Log out</button>
+            <button id ="btnBack" type="button" name="back" onclick="onBack()" >Back</button>
+            <hr>
+        </nav>
+
+        <input type="hidden" id="hidField" name="hid" value="Default">
+        <input type="hidden" id="hidTable" name="hidtab" value="1">
+        <input type="hidden" id="hidId" name="hidid" value="1">
+        <input type="hidden" id="hidMode" name="hidmode" value="1">
+        <input type="hidden" id="hidTables" name="hidntables" value="1"> 
+
+        <div id="defaultContainer" class="divContainer">
+            <label >Tabele:</label>
+            <div id="tablesContainer" class="divContainerInt"> 
+            </div>
+
+            <div class="divContainerInt">
+            <button id="btnAddTable" name="addTable" class="btn" onclick="onAddTable()">Add Table</button>
+            </div>
+        </div>
+
+        <div id="createContainer" class="divContainer">
+            <!-- <form> -->
+                <label id="lNumeCreateTable" for="iNumeCreateTable">Numele Tabelului: </label> 
+                <input id="iNumeCreateTable" type="text" name="numeTable" placeholder="Mos Craciun"><br>
+                <br>
+                <div id="participanti">
+                    <label id="lNumeP1" for="iNumeP1">1. Numele: </label> 
+                    <input id="iNumeP1" type="text" name="numeP1" placeholder="Gogu Teologul"><br>
+
+                    <label id="lNumeP2" for="iNumeP2">2. Numele: </label> 
+                    <input id="iNumeP2" type="text" name="numeP2" placeholder="Gogu Teologul"><br>
+
+                    <label id="lNumeP3" for="iNumeP3">3. Numele: </label> 
+                    <input id="iNumeP3" type="text" name="numeP3" placeholder="Gogu Teologul"><br>
+
+                    <label id="lNumeP4" for="iNumeP4">4. Numele: </label> 
+                    <input id="iNumeP4" type="text" name="numeP4" placeholder="Gogu Teologul"><br>
+
+                    <label id="lNumeP5" for="iNumeP5">5. Numele: </label> 
+                    <input id="iNumeP5" type="text" name="numeP5" placeholder="Gogu Teologul"><br>
+
+                </div>
+                <!-- <button id="btnMore" name="addTable">Add more ...</button> -->
+                
+                
+                
+                
+                <div id="comands">
+                    <hr>
+                    <!-- <button id="btnCancelTable" name="cancelTable">Cancel</button> -->
+                    <input id="iSubmitTable" type="submit" value="Create Table" name="SubmitTable" onclick="createTable()" />
+                    <label id="err"></label>
+                    <hr>
+                    <label >Minim 3 pers</label>
+                </div>
+            <!-- </form> -->
+
+        </div>
+
+        <div id="tableContainer" class="divContainer">
+            <div id = "headerTable">
+                <label id="lNumeTabel">nume</label>
+                <label id="lNrParti">partic</label>
+                <label id="lOwner">owner</label>
+                <hr>
+
+            </div>
+            <div id = "contentTable">
+            </div>
+            <div>
+                <hr>
+                <p>Participantii se pot autentifica cu un token personal.</p>
+            </div>
+
+        </div>
+
+        <div id="tokenContainer" class="divContainer">
+            <div id = "headerToken">
+                <label id="lNumeTabelTkn">nume</label>
+                <label id="lNrPartiTkn">partic</label>
+                <label id="lOwnerTkn">owner</label>
+                <hr>
+            </div>
+            <div id = "contentToken">
+                <label id="lParticipant">gogu </label>
+                <label id="lGift">teologul</label>
+                <button id="btnGenGift" name="genGift">Genereaza</button>
+            </div>
+        </div>
+
+        <footer>
+            Credits Andrei
+        </footer>
+    </div>
+    <script src="datagen.js"></script>
+    <script src="generator.js"></script>
+</body>
+</html>
