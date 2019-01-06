@@ -2,7 +2,7 @@
   "online": {
     "mode": "user",
     "autentification": "1",
-    "state": "Offline"
+    "state": "Online"
   },
   "users": [
     {
@@ -16,24 +16,6 @@
       "name": "Test2",
       "email": "test2@gmail.com",
       "password": "test2"
-    },
-    {
-      "id": 3,
-      "name": "gog",
-      "email": "teo@gmail.com",
-      "password": "zaz"
-    },
-    {
-      "id": 4,
-      "name": "Defau",
-      "email": "gogu@gmail.com",
-      "password": "gogu"
-    },
-    {
-      "id": 5,
-      "name": "Defaute",
-      "email": "gogul@gmail.com",
-      "password": "gogul"
     }
   ],
   "tables": [
@@ -92,122 +74,6 @@
           "name": "asdadas",
           "token": "idw5lir48x8",
           "mate": "4f4bqu00it8",
-          "reveal": "no"
-        }
-      ]
-    },
-    {
-      "id": 4,
-      "name": "asdaaaa",
-      "ownerId": "1",
-      "reveals": "3/0",
-      "guys": [
-        {
-          "id": 0,
-          "name": "aas",
-          "token": "3navqwk4y7o",
-          "mate": "549pyeqcn9k",
-          "reveal": "no"
-        },
-        {
-          "id": 1,
-          "name": "daas",
-          "token": "8s9e2vlhlqk",
-          "mate": "3navqwk4y7o",
-          "reveal": "no"
-        },
-        {
-          "id": 2,
-          "name": "dfas",
-          "token": "549pyeqcn9k",
-          "mate": "8s9e2vlhlqk",
-          "reveal": "no"
-        }
-      ]
-    },
-    {
-      "id": 5,
-      "name": "asdaaaa",
-      "ownerId": "1",
-      "reveals": "3/0",
-      "guys": [
-        {
-          "id": 0,
-          "name": "aas",
-          "token": "20nc6gn0sk8",
-          "mate": "f7p151l6vlv",
-          "reveal": "no"
-        },
-        {
-          "id": 1,
-          "name": "daas",
-          "token": "f7p151l6vlv",
-          "mate": "uico8kjf4c",
-          "reveal": "no"
-        },
-        {
-          "id": 2,
-          "name": "dfas",
-          "token": "uico8kjf4c",
-          "mate": "20nc6gn0sk8",
-          "reveal": "no"
-        }
-      ]
-    },
-    {
-      "id": "6",
-      "name": "asad",
-      "ownerId": "1",
-      "reveals": "3/0",
-      "guys": [
-        {
-          "id": 0,
-          "name": "afa",
-          "token": "z3au1ev07cl",
-          "mate": "mg35o5boinr",
-          "reveal": "no"
-        },
-        {
-          "id": 1,
-          "name": "sd",
-          "token": "mg35o5boinr",
-          "mate": "9vwag753v7n",
-          "reveal": "no"
-        },
-        {
-          "id": 2,
-          "name": "fa",
-          "token": "9vwag753v7n",
-          "mate": "z3au1ev07cl",
-          "reveal": "no"
-        }
-      ]
-    },
-    {
-      "id": "7",
-      "name": "sa",
-      "ownerId": "1",
-      "reveals": "3/0",
-      "guys": [
-        {
-          "id": 0,
-          "name": "fds1",
-          "token": "mtghe5y7t1t",
-          "mate": "oi7tga2e8m",
-          "reveal": "no"
-        },
-        {
-          "id": 1,
-          "name": "hgf",
-          "token": "hy1wtb0w6hc",
-          "mate": "mtghe5y7t1t",
-          "reveal": "no"
-        },
-        {
-          "id": 2,
-          "name": "ghfd",
-          "token": "oi7tga2e8m",
-          "mate": "hy1wtb0w6hc",
           "reveal": "no"
         }
       ]
