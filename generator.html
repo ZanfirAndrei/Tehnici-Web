@@ -4,23 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>SSG</title>
 
     <link rel="stylesheet" href="generator.css">
 </head>
 <body>
     
-    <div id="generatorContainer" class="container">
-        <header>
+    <div id="generatorContainer" class="mainContainer">
+        <header class="title">
             <h1>Secret Santa Generator</h1>
         </header>
-        <nav >
-            <hr>
-            <label id="Welcome"  class="label">Welcome</label>
-            <label id="lNumeCon" class="label"></label> |
-            <button id ="btnLogOut" type="button" name="logOut" onclick="onLogOut()" >Log out</button>
-            <button id ="btnBack" type="button" name="back" onclick="onBack()" >Back</button>
-            <hr>
+        <nav class="navi">
+            <label id="Welcome"  class="navi1">Welcome,</label>
+            <label id="lNumeCon" class="navi1"></label>
+            <button id ="btnLogOut" class="navi2" type="button" name="logOut" onclick="onLogOut()" >Log out</button>
+            <button id ="btnBack" class="navi2" type="button" name="back" onclick="onBack()" >Back</button>
         </nav>
 
         <input type="hidden" id="hidField" name="hid" value="Default">
@@ -30,35 +28,34 @@
         <input type="hidden" id="hidTables" name="hidntables" value="1"> 
 
         <div id="defaultContainer" class="divContainer">
-            <label >Tabele:</label>
+            <label class="label">Tabele:</label>
             <div id="tablesContainer" class="divContainerInt"> 
             </div>
 
-            <div class="divContainerInt">
             <button id="btnAddTable" name="addTable" class="btn" onclick="onAddTable()">Add Table</button>
-            </div>
+            
         </div>
 
         <div id="createContainer" class="divContainer">
             <!-- <form> -->
-                <label id="lNumeCreateTable" for="iNumeCreateTable">Numele Tabelului: </label> 
-                <input id="iNumeCreateTable" type="text" name="numeTable" placeholder="Mos Craciun"><br>
+                <label id="lNumeCreateTable" class="label" for="iNumeCreateTable">Nume tabel: </label> 
+                <input id="iNumeCreateTable" class="inputText" type="text" name="numeTable" placeholder="Mos Craciun"><br>
                 <br>
                 <div id="participanti">
-                    <label id="lNumeP1" for="iNumeP1">1. Numele: </label> 
-                    <input id="iNumeP1" type="text" name="numeP1" placeholder="Gogu Teologul"><br>
+                    <label id="lNumeP1" class="label" for="iNumeP1">1. Nume participant: </label> 
+                    <input id="iNumeP1" class="inputText numeP" type="text" name="numeP1" placeholder="Gogu Teologul"><br>
 
-                    <label id="lNumeP2" for="iNumeP2">2. Numele: </label> 
-                    <input id="iNumeP2" type="text" name="numeP2" placeholder="Gogu Teologul"><br>
+                    <label id="lNumeP2" class="label" for="iNumeP2">2. Nume participant: </label> 
+                    <input id="iNumeP2" class="inputText numeP" type="text" name="numeP2" placeholder="Gogu Teologul"><br>
 
-                    <label id="lNumeP3" for="iNumeP3">3. Numele: </label> 
-                    <input id="iNumeP3" type="text" name="numeP3" placeholder="Gogu Teologul"><br>
+                    <label id="lNumeP3" class="label" for="iNumeP3">3. Nume participant: </label> 
+                    <input id="iNumeP3" class="inputText numeP" type="text" name="numeP3" placeholder="Gogu Teologul"><br>
 
-                    <label id="lNumeP4" for="iNumeP4">4. Numele: </label> 
-                    <input id="iNumeP4" type="text" name="numeP4" placeholder="Gogu Teologul"><br>
+                    <label id="lNumeP4" class="label" for="iNumeP4">4. Nume participant: </label> 
+                    <input id="iNumeP4" class="inputText numeP" type="text" name="numeP4" placeholder="Gogu Teologul"><br>
 
-                    <label id="lNumeP5" for="iNumeP5">5. Numele: </label> 
-                    <input id="iNumeP5" type="text" name="numeP5" placeholder="Gogu Teologul"><br>
+                    <label id="lNumeP5" class="label" for="iNumeP5">5. Nume participant: </label> 
+                    <input id="iNumeP5" class="inputText numeP" type="text" name="numeP5" placeholder="Gogu Teologul"><br>
 
                 </div>
                 <!-- <button id="btnMore" name="addTable">Add more ...</button> -->
@@ -68,11 +65,11 @@
                 
                 <div id="comands">
                     <hr>
-                    <!-- <button id="btnCancelTable" name="cancelTable">Cancel</button> -->
-                    <input id="iSubmitTable" type="submit" value="Create Table" name="SubmitTable" onclick="createTable()" />
-                    <label id="err"></label>
-                    <hr>
-                    <label >Minim 3 pers</label>
+                    <!-- <button id="btnCancelTable" name="cancelTable">Cancel</button> -->                    
+                    <label class="label">Introduceti minim 3 persoane.</label>
+                    <label id="err" class="label err"></label>
+
+                    <input id="iSubmitTable" class="btn" type="submit" value="Create Table" name="SubmitTable" onclick="createTable()" /><br><br>
                 </div>
             <!-- </form> -->
 
@@ -80,13 +77,13 @@
 
         <div id="tableContainer" class="divContainer">
             <div id = "headerTable">
-                <label id="lNumeTabel">nume</label>
-                <label id="lNrParti">partic</label>
-                <label id="lOwner">owner</label>
+                <label id="lNumeTabel" class="label">nume</label>
+                <label id="lNrParti" class="label">partic</label>
+                <label id="lOwner" class="label">owner</label>
                 <hr>
 
             </div>
-            <div id = "contentTable">
+            <div id = "contentTable" class="table">
             </div>
             <div>
                 <hr>
@@ -96,21 +93,21 @@
         </div>
 
         <div id="tokenContainer" class="divContainer">
-            <div id = "headerToken">
-                <label id="lNumeTabelTkn">nume</label>
-                <label id="lNrPartiTkn">partic</label>
-                <label id="lOwnerTkn">owner</label>
+            <!-- <div id = "headerToken">
+                <label id="lNumeTabelTkn" class="label">nume</label>
+                <label id="lNrPartiTkn" class="label">partic</label>
+                <label id="lOwnerTkn" class="label">owner</label>
                 <hr>
             </div>
             <div id = "contentToken">
-                <label id="lParticipant">gogu </label>
-                <label id="lGift">teologul</label>
+                <label id="lParticipant" class="label">gogu </label>
+                <label id="lGift" class="label">teologul</label>
                 <button id="btnGenGift" name="genGift">Genereaza</button>
-            </div>
+            </div> -->
         </div>
 
-        <footer>
-            Credits Andrei
+        <footer class="credits">
+            Created by the mind of Andrei
         </footer>
     </div>
     <script src="datagen.js"></script>
