@@ -1,5 +1,3 @@
-let myData;
-
 
 
 //delete
@@ -9,22 +7,6 @@ async function deleteData(url, id) {
     });
     const json = await res.json();
     return json;
-}
-
-//get
-async function getData(url) {
-
-  var URL = url;//"http://localhost:3000/"+url;
-  const res = await fetch(URL);
-  const json = await res.json();
-  console.log( json);
-
-  return json;
-    
-      
-    
-
-
 }
 
 
@@ -41,7 +23,7 @@ function getData2(url ,url2) {
               response.status);
             return;
           }
-          console.log(url2);
+          //console.log(url2);
    
           // Examine the text in the response
           if(url2 === "online")
@@ -57,7 +39,7 @@ function getData2(url ,url2) {
    
 function renderData(data) {
     myData = data; 
-    console.log(myData);
+    //console.log(myData);
     
 }
 
@@ -68,7 +50,7 @@ function renderData2(data){
 
 function dispayData(){
     
-    console.log(myData);
+    //console.log(myData);
     return myData ;
 };
 

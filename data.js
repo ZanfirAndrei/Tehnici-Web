@@ -16,24 +16,6 @@ function deleteData(url, id) {
     });
 }
 
-//get
-async function getData(url) {
-
-  var URL = url;//"http://localhost:3000/"+url;
-  const res = await fetch(URL);
-  const json = await res.json();
-  console.log( json);
-
-  return json;
-    
-      
-    
-
-
-}
-
-
-
 //get 2
 function getData2(url ,url2) {
 
@@ -46,7 +28,7 @@ function getData2(url ,url2) {
               response.status);
             return;
           }
-          console.log(url2);
+          //console.log(url2);
    
           // Examine the text in the response
           if(url2 === "online")
@@ -62,7 +44,7 @@ function getData2(url ,url2) {
    
 function renderData(data) {
     myData = data; 
-    console.log(myData);
+    // console.log(myData);
     
 }
 
@@ -126,7 +108,7 @@ async function manageData( method, url ,id,bodyData){
    var URL = "http://localhost:3000/"+url+"/";
     switch(method){
         case 'GET':
-           //response = await getData(URL);
+           
            getData2(URL,url); 
            //console.log(response);
           

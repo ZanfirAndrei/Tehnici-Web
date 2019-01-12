@@ -118,7 +118,7 @@ body {
 
 @media(max-width: 768px){
   .fontTitM1{ font-size: 3vmin;}
-  .naviM1{width: 100%;margin: 5px 20px; font-size: 3vmin;}
+  .naviM1{width: 100%;margin: 5px 20px; font-size: 2vmin;}
   .easyBtnM1 {width: 100%;  font-size: 3vmin;} 
   .fontTextM1{ font-size: 3vmin;}
   .inputM1{margin: 6px 6px; width: 90%; font-size: 2vmin;}

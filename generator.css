@@ -157,10 +157,7 @@ h1{
     
 }
   
-/*.err{
-    font-size: 200%;
-    color: #d4a7a7;
-}*/
+
 
 
 .table {
@@ -170,9 +167,7 @@ h1{
     width: 100%;
     overflow-x:auto;
     word-break: initial;
-    /* flex:wrap;
-    flex-direction: column;
-     */
+    
 }
 
 .th {

@@ -9,7 +9,7 @@ async function getDataSync(url){
     var URL = "http://localhost:3000/"+url+"/";
     const res = await fetch(URL);
     const json = await res.json();
-    console.log( json);
+   // console.log( json);
 
     return json;
       
@@ -27,7 +27,7 @@ async function getDataSync(url){
 async function getOnline(){
 
     let data  = await getDataSync( "online");
-    console.log(data);
+    //console.log(data);
     if(data.state ==="Online"){
         if(data.mode ==="user" ){
             document.getElementById("hidField").value = "Default";
@@ -147,7 +147,7 @@ async function doTable(data){
 
         TableContent += `
         <tr class="tr">
-            <td class="td">${i.id}</td>
+            <td class="td">${i.id + 1}</td>
             <td class="td"><label id="lName-${i.id}" >${i.name}</lable></td>
             <td class="td"><label id="lToken-${i.id}" >${i.token}</lable></td>
             <td class="td"><label id="lReveal-${i.id}" >${i.reveal}</lable></td>
