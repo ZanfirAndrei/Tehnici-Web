@@ -11,45 +11,45 @@
 <body>
     
     <article id="indexContainer" class="mainContainer">
-        <header class="title">
-            <h1>Secret Santa Generator</h1>
+        <header class="title fontTitM1 fontTitM2 fontTitM3">
+            Secret Santa Generator
         </header>
         <nav class="navi">
-            <button class="button navigBtn" id ="btnLogInTab" name="LogInTab" onclick="onBtnAute()" >Autentificare</button>
-            <button class="button navigBtn" id ="btnAboutUs" name="AboutUs" onclick="onBtnAbout()" >ABOUT US</button>
+            <button class="button navigBtn naviM1 naviM2 naviM3" id ="btnLogInTab" name="LogInTab" onclick="onBtnAute()" >Autentificare</button>
+            <button class="button navigBtn naviM1 naviM2 naviM3" id ="btnAboutUs" name="AboutUs" onclick="onBtnAbout()" >ABOUT US</button>
         </nav>
         <div id="formContainer" class="formContainer">
             <div id="divEasy">
-            <label class="label">Easy to access:</label>
-            <button id="btnToken" class="button" name="token" onclick="onBtnTkn();" >I have a token</button>
-            <button id="btnCont" class="button" name="cont"  onclick="onBtnCont();">I have an account</button>
+            <label class="label  fontTextM1 fontTextM2 fontTextM3">Easy to access:</label>
+            <button id="btnToken" class="button easyBtnM1 easyBtnM2" name="token" onclick="onBtnTkn();" >I have a token</button>
+            <button id="btnCont" class="button easyBtnM1 easyBtnM2" name="cont"  onclick="onBtnCont();">I have an account</button>
             </div>
             <form action="file:///D:/Faculate/Anul%20III/Info/Tehnici%20web/Proiect/generator.html" method="POST" onsubmit="return onSubmit()">
                 <!-- <input type="button" id="hid" name="hid" onclick="setPageMode();" onchange="onChangeHid();" value=""> -->
                 <input class = "input" type="hidden" id="hidField" name="hid" value="Default">
                 <div id="divNume" class="toggleDiv">
-                    <label id="lNume" class = "label" for="iNume">Numele: </label>
-                    <input id="iNume" class = "inputText" type="text" name="nume" placeholder="Gogu Teologul">
+                    <label id="lNume" class = "label fontTextM1 fontTextM2 fontTextM3" for="iNume">Numele: </label>
+                    <input id="iNume" class = "inputText inputM1 inputM2 inputM3" type="text" name="nume" placeholder="Gogu Teologul">
                 </div>
                 
                 <div id="divEmail" class="toggleDiv">
-                    <label id="lEmail" class = "label" for="iEmail" >Email address: </label>
-                    <input id="iEmail" class = "inputText" type="text" name="email" placeholder="GoguTeologul@gmail.com" >
+                    <label id="lEmail" class = "label fontTextM1 fontTextM2 fontTextM3" for="iEmail" >Email address: </label>
+                    <input id="iEmail" class = "inputText inputM1 inputM2 inputM3" type="text" name="email" placeholder="GoguTeologul@gmail.com" >
                 </div>
                 
                 <div id="divParola" class="toggleDiv">
-                    <label id="lParola" class = "label" for="iParola">Parola: </label>
-                    <input id="iParola" class = "inputText" type="password" name="parola">
+                    <label id="lParola" class = "label fontTextM1 fontTextM2 fontTextM3" for="iParola">Parola: </label>
+                    <input id="iParola" class = "inputText inputM1 inputM2 inputM3" type="password" name="parola">
                 </div>
                 
                 <div id="divToken" class="toggleDiv">
-                    <label id="lToken" class = "label" for="iToken">Token: </label>
-                    <input id="iToken" class = "inputText" type="text" name="token" placeholder="1ndksio23n4">
+                    <label id="lToken" class = "label fontTextM1 fontTextM2 fontTextM3" for="iToken">Token: </label>
+                    <input id="iToken" class = "inputText inputM1 inputM2 inputM3" type="text" name="token" placeholder="1ndksio23n4">
                 </div>
                 
                 
-                <input id="iSubmit" class = "inputSubmit" type="submit" value="Continue" name="Submit" ><br>
-                <label id="err" class="err label"></label>
+                <input id="iSubmit" class = "inputSubmit submitM1 submitM2 submitM3" type="submit" value="Continue" name="Submit" ><br>
+                <label id="err" class="err label fontTextM1 fontTextM2 fontTextM3"></label>
                 
                     
             </form>
@@ -59,8 +59,8 @@
         <div id="aboutUs">
             <p class="aboutUs">Acesta este un proiect pentru laboratorul de Tehnici Web.</p>
         </div>
-
-        <footer class="credits">
+ 
+        <footer class="credits creditM1 creditM2 creditM3">
             Created by the mind of Andrei
         </footer>
     </article>

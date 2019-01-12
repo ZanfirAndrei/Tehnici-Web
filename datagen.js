@@ -3,17 +3,12 @@ let myData;
 
 
 //delete
-function deleteData(url, id) {
-    return fetch(url + id, {
+async function deleteData(url, id) {
+    const res = await fetch(url + id, {
       method: 'delete'
-    }).then(response =>
-      response.json().then(json => {
-        return json;
-      })
-    )
-    .catch(function (err) {
-        console.log('Fetch Error :-S', err);
     });
+    const json = await res.json();
+    return json;
 }
 
 //get

@@ -11,14 +11,16 @@
 <body>
     
     <div id="generatorContainer" class="mainContainer">
-        <header class="title">
-            <h1>Secret Santa Generator</h1>
+        <header class="title fontTitM1 fontTitM2 fontTitM3">
+            Secret Santa Generator
         </header>
         <nav class="navi">
-            <label id="Welcome"  class="navi1">Welcome,</label>
-            <label id="lNumeCon" class="navi1"></label>
-            <button id ="btnLogOut" class="navi2" type="button" name="logOut" onclick="onLogOut()" >Log out</button>
-            <button id ="btnBack" class="navi2" type="button" name="back" onclick="onBack()" >Back</button>
+            <div class="navi1M1 navi1M2 navi1M3">
+                <label id="Welcome"  class="navi1 fontTextM1 fontTextM2 fontTextM3 ">Welcome,</label>
+                <label id="lNumeCon" class="navi1 fontTextM1 fontTextM2 fontTextM3"></label>
+            </div>
+            <button id ="btnLogOut" class="navi2 naviM1 naviM2 naviM3" type="button" name="logOut" onclick="onLogOut()" >Log out</button>
+            <button id ="btnBack" class="navi2 naviM1 naviM2 naviM3" type="button" name="back" onclick="onBack()" >Back</button>
         </nav>
 
         <input type="hidden" id="hidField" name="hid" value="Default">
@@ -26,36 +28,37 @@
         <input type="hidden" id="hidId" name="hidid" value="1">
         <input type="hidden" id="hidMode" name="hidmode" value="1">
         <input type="hidden" id="hidTables" name="hidntables" value="1"> 
-
+        <br>
+        <br>
         <div id="defaultContainer" class="divContainer">
-            <label class="label">Tabele:</label>
+            <label class="label fontTextM1 fontTextM2 fontTextM3">Tabele:</label>
             <div id="tablesContainer" class="divContainerInt"> 
             </div>
 
-            <button id="btnAddTable" name="addTable" class="btn" onclick="onAddTable()">Add Table</button>
+            <button id="btnAddTable" name="addTable" class="btn btnM1 btnM2 btnM3" onclick="onAddTable()">Add Table</button>
             
         </div>
 
         <div id="createContainer" class="divContainer">
             <!-- <form> -->
-                <label id="lNumeCreateTable" class="label" for="iNumeCreateTable">Nume tabel: </label> 
-                <input id="iNumeCreateTable" class="inputText" type="text" name="numeTable" placeholder="Mos Craciun"><br>
+                <label id="lNumeCreateTable" class="label fontTextM1 fontTextM2 fontTextM3" for="iNumeCreateTable">Nume tabel: </label> 
+                <input id="iNumeCreateTable" class="inputText inputM1 inputM2 inputM3" type="text" name="numeTable" placeholder="Mos Craciun"><br>
                 <br>
                 <div id="participanti">
-                    <label id="lNumeP1" class="label" for="iNumeP1">1. Nume participant: </label> 
-                    <input id="iNumeP1" class="inputText numeP" type="text" name="numeP1" placeholder="Gogu Teologul"><br>
+                    <label id="lNumeP1" class="label fontTextM1 fontTextM2 fontTextM3" for="iNumeP1">1. Nume participant: </label> 
+                    <input id="iNumeP1" class="inputText numeP inputM1 inputM2 inputM3 " type="text" name="numeP1" placeholder="Gogu Teologul"><br>
 
-                    <label id="lNumeP2" class="label" for="iNumeP2">2. Nume participant: </label> 
-                    <input id="iNumeP2" class="inputText numeP" type="text" name="numeP2" placeholder="Gogu Teologul"><br>
+                    <label id="lNumeP2" class="label fontTextM1 fontTextM2 fontTextM3" for="iNumeP2">2. Nume participant: </label> 
+                    <input id="iNumeP2" class="inputText numeP inputM1 inputM2 inputM3" type="text" name="numeP2" placeholder="Gogu Teologul"><br>
 
-                    <label id="lNumeP3" class="label" for="iNumeP3">3. Nume participant: </label> 
-                    <input id="iNumeP3" class="inputText numeP" type="text" name="numeP3" placeholder="Gogu Teologul"><br>
+                    <label id="lNumeP3" class="label fontTextM1 fontTextM2 fontTextM3" for="iNumeP3">3. Nume participant: </label> 
+                    <input id="iNumeP3" class="inputText numeP inputM1 inputM2 inputM3" type="text" name="numeP3" placeholder="Gogu Teologul"><br>
 
-                    <label id="lNumeP4" class="label" for="iNumeP4">4. Nume participant: </label> 
-                    <input id="iNumeP4" class="inputText numeP" type="text" name="numeP4" placeholder="Gogu Teologul"><br>
+                    <label id="lNumeP4" class="label fontTextM1 fontTextM2 fontTextM3" for="iNumeP4">4. Nume participant: </label> 
+                    <input id="iNumeP4" class="inputText numeP inputM1 inputM2 inputM3" type="text" name="numeP4" placeholder="Gogu Teologul"><br>
 
-                    <label id="lNumeP5" class="label" for="iNumeP5">5. Nume participant: </label> 
-                    <input id="iNumeP5" class="inputText numeP" type="text" name="numeP5" placeholder="Gogu Teologul"><br>
+                    <label id="lNumeP5" class="label fontTextM1 fontTextM2 fontTextM3" for="iNumeP5">5. Nume participant: </label> 
+                    <input id="iNumeP5" class="inputText numeP inputM1 inputM2 inputM3" type="text" name="numeP5" placeholder="Gogu Teologul"><br>
 
                 </div>
                 <!-- <button id="btnMore" name="addTable">Add more ...</button> -->
@@ -66,15 +69,15 @@
                 <div id="comands">
                     <hr>
                     <!-- <button id="btnCancelTable" name="cancelTable">Cancel</button> -->                    
-                    <label class="label">Introduceti minim 3 persoane.</label>
-                    <label id="err" class="label err"></label>
+                    <label class="label fontTextM1">Introduceti minim 3 persoane.</label>
+                    <label id="err" class="label err fontTextM1 fontTextM2 fontTextM3"></label>
 
-                    <input id="iSubmitTable" class="btn" type="submit" value="Create Table" name="SubmitTable" onclick="createTable()" /><br><br>
+                    <input id="iSubmitTable" class="btn submitM1 submitM2 submitM3" type="submit" value="Create Table" name="SubmitTable" onclick="createTable()" /><br><br>
                 </div>
             <!-- </form> -->
 
         </div>
-
+        <br>
         <div id="tableContainer" class="divContainer">
             <div id = "headerTable">
                 <label id="lNumeTabel" class="label">nume</label>
@@ -87,7 +90,7 @@
             </div>
             <div>
                 <hr>
-                <p>Participantii se pot autentifica cu un token personal.</p>
+                <p class="fontTextM1 fontTextM2 fontTextM3">Participantii se pot autentifica cu un token personal.</p>
             </div>
 
         </div>
@@ -106,7 +109,7 @@
             </div> -->
         </div>
 
-        <footer class="credits">
+        <footer class="credits creditM1 creditM2 creditM3">
             Created by the mind of Andrei
         </footer>
     </div>

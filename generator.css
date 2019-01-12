@@ -4,6 +4,7 @@ body {
     padding-bottom: 2%;
     padding-left: 10%;
     padding-right: 10%;
+    word-break: break-all ;
 }
 
 .mainContainer {
@@ -21,6 +22,7 @@ body {
     border-radius: 5px;
     background-color: rgb(185, 24, 24);;
     display: flex;
+    flex-wrap: wrap;
     justify-content:center;
     padding: 1%; 
     font-size: 94%;
@@ -130,6 +132,10 @@ input[type=submit] {
     color: white;
     padding: 12px 20px;
     border: none;
+    display: flex;
+    flex-wrap: wrap;
+    word-break: break-all;
+    
     border-radius: 4px;
     cursor: pointer;
     float: right;
@@ -163,9 +169,10 @@ h1{
     border-collapse: collapse;
     width: 100%;
     overflow-x:auto;
-    flex:wrap;
+    word-break: initial;
+    /* flex:wrap;
     flex-direction: column;
-    overflow-x: auto;
+     */
 }
 
 .th {
@@ -174,7 +181,7 @@ h1{
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: center;
-    background-color: #5100ff;
+    background-color: #360c91;
     color: white;
 } 
 .td {
@@ -186,14 +193,48 @@ h1{
     background-color: #5100ff;
     color: white;
 }
-  
-/*.tr:nth-child(even){
-    background-color: #6d1acc;
+ 
+
+@media(max-width: 767px){
+    .fontTitM1{ font-size: 4vmin;}
+    .navi1M1{width: 100%; padding-left: 0px;}
+    .naviM1{width: 100%; margin: 5px 0px; font-size: 3vmin;}
+    .tabBtnM1{width: 80%; margin: 5px; font-size: 2.5vmin;} 
+    .btnM1{width: 70%; margin: 5px ; font-size: 3vmin; }
+    .fontTextM1{ font-size: 3vmin;}
+    .fontTabM1{font-size: 3vmin;}
+    .inputM1{margin: 6px 6px; width: 90%; font-size: 2vmin;}
+    .submitM1{width: 50%; font-size: 2vmin;}
+    .creditM1{font-size: 3vmin;}
 }
-.tr:hover {
-    background-color: #451280;
-}*/
+    
+@media(min-width: 768px) and (max-width: 1279px){
+    .fontTitM2{ font-size: 5vmin;}
+    .navi1M2{width: 50%; padding-left: 0px;}
+    .naviM2{width: 25%; margin: 5px ; font-size: 3vmin;}
+    .tabBtnM2{width: 30%; margin: 5px; font-size: 3vmin;}
+    .btnM2{width: 25%; font-size: 3vmin; }
+    .fontTextM2{ font-size: 2.5vmin;}
+    .fontTabM2{font-size: 4vmin;}
+    .inputM2{margin: 6px 6px; width: 50%; font-size: 2vmin;}
+    .submitM2{width: 25%; font-size: 3vmin;}
+    .creditM2{width:97%; font-size: 3vmin;}
+}
   
+
+@media(min-width: 1280px) {
+    .fontTitM3{ font-size: 6vmin;}
+    .navi1M3{width: 25%; padding-left: 0px;}
+    .naviM3{width: 10%; margin: 5px ; font-size: 2vmin;}
+    .tabBtnM3{width: 15%; margin: 5px ; font-size: 2vmin;}
+    .btnM3{width: 15%; font-size: 2vmin; }
+    .fontTextM3{ font-size: 3vmin;}
+    .fontTabM3{font-size: 3vmin;}
+    .inputM3{margin: 6px 6px; width: 25%; font-size: 2vmin;}
+    .submitM3{width: 10%; font-size: 2vmin;}
+    .creditM3{width:97%; font-size: 2vmin;}
+    
+}  
 
 
   
