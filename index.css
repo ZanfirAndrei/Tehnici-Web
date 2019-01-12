@@ -75,7 +75,9 @@ body {
   font-family:"DejaVu Sans Mono", monospace;
   font-size: 15px;
 }
-
+h1{
+  display: none;
+}
 .inputSubmit {
   background-color: #4CAF50;
   color: white;
