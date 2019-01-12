@@ -4,6 +4,7 @@ body {
   padding-bottom: 2%;
   padding-left: 10%;
   padding-right: 10%;
+  word-break: break-all ;
 }
 
 .mainContainer {
@@ -21,6 +22,8 @@ body {
   border-radius: 5px;
   background-color: rgb(185, 24, 24);;
   display: flex;
+  flex-wrap: wrap;
+  
   justify-content:center;
   padding: 1%; 
   font-size: 180%;
@@ -30,6 +33,7 @@ body {
 .navi {
   display: flex;
   justify-content:flex-end;
+  flex-wrap: wrap;
   padding: 5px ;
   width: 100%;
 }
@@ -109,4 +113,35 @@ body {
   display:flex;
   justify-content: center;
   font-size:150%;
+}
+
+
+@media(max-width: 768px){
+  .fontTitM1{ font-size: 3vmin;}
+  .naviM1{width: 100%;margin: 5px 20px; font-size: 3vmin;}
+  .easyBtnM1 {width: 100%;  font-size: 3vmin;} 
+  .fontTextM1{ font-size: 3vmin;}
+  .inputM1{margin: 6px 6px; width: 90%; font-size: 2vmin;}
+  .submitM1{width: 50%; font-size: 2vmin;}
+  .creditM1{font-size: 2vmin;}
+}
+  
+@media(min-width: 768px) and (max-width: 1280px){
+  .fontTitM2{ font-size: 5vmin;}
+  .naviM2{width: 20%;margin: 5px; font-size: 2vmin;}
+  .easyBtnM2{width: 33%;  font-size: 2vmin;}
+  .fontTextM2{ font-size: 3vmin;}
+  .inputM2{margin: 6px 6px; width: 50%; font-size: 2vmin;}
+  .submitM2{width: 25%; font-size: 3vmin;}
+  .creditM2{width:97%; font-size: 3vmin;}
+}
+
+@media(min-width: 1280px) {
+  .fontTitM3{ font-size: 6vmin;}
+  .naviM3{width: 15%;margin: 5px; font-size: 2vmin;}
+  .easyBtnM3{width: 20%;  font-size: 2vmin;}
+  .inputM3{margin: 6px 6px; width: 25%; font-size: 2vmin;}
+  .fontTextM3{ font-size: 2vmin;}
+  .submitM3{width: 15%; font-size: 2vmin;}
+  .creditM3{width:97%; font-size: 2vmin;}
 }

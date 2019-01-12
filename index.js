@@ -36,10 +36,10 @@ function togglePage(){
             document.getElementById("formContainer").style.display = "block";
             document.getElementById("aboutUs").style.display = "none";
 
-            document.getElementById("divEasy").style.display = "flex";
+            document.getElementById("divEasy").style.display = "block";
             document.getElementById("divNume").style.display = "none";
-            document.getElementById("divEmail").style.display = "flex";
-            document.getElementById("divParola").style.display = "flex";
+            document.getElementById("divEmail").style.display = "block";
+            document.getElementById("divParola").style.display = "block";
             document.getElementById("divToken").style.display = "none";
 
             document.getElementById("btnToken").innerHTML = "I have a token";
@@ -53,10 +53,10 @@ function togglePage(){
             document.getElementById("formContainer").style.display = "block";
             document.getElementById("aboutUs").style.display = "none";
 
-            document.getElementById("divEasy").style.display = "flex";
+            document.getElementById("divEasy").style.display = "block";
             document.getElementById("divNume").style.display = "none";
-            document.getElementById("divEmail").style.display = "flex";
-            document.getElementById("divParola").style.display = "flex";
+            document.getElementById("divEmail").style.display = "block";
+            document.getElementById("divParola").style.display = "block";
             document.getElementById("divToken").style.display = "none";
 
 
@@ -72,10 +72,10 @@ function togglePage(){
             document.getElementById("formContainer").style.display = "block";
             document.getElementById("aboutUs").style.display = "none";
 
-            document.getElementById("divEasy").style.display = "flex";
-            document.getElementById("divNume").style.display = "flex";
-            document.getElementById("divEmail").style.display = "flex";
-            document.getElementById("divParola").style.display = "flex";
+            document.getElementById("divEasy").style.display = "block";
+            document.getElementById("divNume").style.display = "block";
+            document.getElementById("divEmail").style.display = "block";
+            document.getElementById("divParola").style.display = "block";
             document.getElementById("divToken").style.display = "none";
 
             document.getElementById("btnToken").innerHTML = "I have a token";
@@ -90,11 +90,11 @@ function togglePage(){
             document.getElementById("formContainer").style.display = "block";
             document.getElementById("aboutUs").style.display = "none";
 
-            document.getElementById("divEasy").style.display = "flex";
+            document.getElementById("divEasy").style.display = "block";
             document.getElementById("divEmail").style.display = "none";
             document.getElementById("divNume").style.display = "none";
             document.getElementById("divParola").style.display = "none";
-            document.getElementById("divToken").style.display = "flex";
+            document.getElementById("divToken").style.display = "block";
 
             document.getElementById("btnToken").innerHTML = "I have an account";
             document.getElementById("btnCont").innerHTML = "I don't have an account";
@@ -105,7 +105,7 @@ function togglePage(){
         case 'About':
             document.getElementById("formContainer").style.display = "none";
             document.getElementById("divEasy").style.display = "none";
-            document.getElementById("aboutUs").style.display = "flex";
+            document.getElementById("aboutUs").style.display = "block";
             
         
 
@@ -203,7 +203,7 @@ function onSubmit(){
             getSubmit(block,"users","login");
         }
         else {
-            document.getElementById("err").innerHTML = "Completati toate campurile!!!!!!!";
+            document.getElementById("err").innerHTML = "Completati TOATE campurile !!!";
             return false;
         }
         
@@ -304,7 +304,7 @@ function getSubmit( block , mode , type ){
             response.json().then(data =>checkSignUp(block,data));
           else if( mode === "users" )
             response.json().then(data =>checkDataUsers(block,data));
-          else if( mode === "tabels" )
+          else if( mode === "tables" )
             response.json().then(data =>checkTknTables(block,data));
 
             

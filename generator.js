@@ -1,6 +1,8 @@
 
 
-window.onload=() =>{getOnline();}
+window.onload=() =>{getOnline();
+//togglePage();
+}
 
 
 async function getDataSync(url){
@@ -100,7 +102,7 @@ async function loadTable(){
 function clearTable(item){
 
     while (item.childNodes.length > 0)
-	item.removeChild(item.childNodes[0]);
+	    item.removeChild(item.childNodes[0]);
 }
 
 
@@ -121,6 +123,7 @@ async function getAllTokens(){
 async function doTable(data){
     let name = document.createElement("label");
     name.id="lNumeTab";
+    name.setAttribute("class","fontTextM1 fontTextM2 fontTextM3");
     name.innerHTML = "Nume Tabel: "+ data.name;
 
     /*let reveals = document.createElement("label");
@@ -129,25 +132,25 @@ async function doTable(data){
 
     let tab = document.createElement("table");
     tab.id="listTable";
-
+    tab.setAttribute("class","table fontTabM1 fontTabM2 fontTabM3");
     let HeadTableContent =  
         `
-        <tr>
+        <tr class="tr">
             <th></th>
-            <th>Nume</td>
-            <th>Token</th>
-            <th>Reveal</th>
+            <th class="th">Nume</td>
+            <th class="th">Token</th>
+            <th class="th">Reveal</th>
         </tr>
         `;
     let TableContent='';
     for(let i of data.guys){
 
         TableContent += `
-        <tr>
-            <td>${i.id}</td>
-            <td><label id="lName-${i.id}">${i.name}</lable></td>
-            <td><label id="lToken-${i.id}">${i.token}</lable></td>
-            <td><label id="lReveal-${i.id}">${i.reveal}</lable></td>
+        <tr class="tr">
+            <td class="td">${i.id}</td>
+            <td class="td"><label id="lName-${i.id}" >${i.name}</lable></td>
+            <td class="td"><label id="lToken-${i.id}" >${i.token}</lable></td>
+            <td class="td"><label id="lReveal-${i.id}" >${i.reveal}</lable></td>
         <tr>
         `;
         
@@ -159,10 +162,31 @@ async function doTable(data){
 
     let owner = document.createElement("label");
     owner.id = "lOwner";
+    owner.setAttribute("class","fontTextM1 fontTextM2 fontTextM3");
     owner.innerHTML = "Owner: " +res.name;
 
+    let btn =document.createElement("button");
+    btn.setAttribute("id",`del-${data.id}`)
+    btn.setAttribute("type","button");
+    btn.setAttribute("name","del");
+    btn.setAttribute("class","button tabBtnM1 tabBtnM2 tabBtnM3");
+    btn.innerHTML="Sterge tabelul";
+    btn.addEventListener('click', async function () {
+        let id = (this.id.split('-'))[1];
+
+
+        await manageData('DELETE','tables',id,"");
+
+        document.getElementById("hidField").value='Default';
+        togglePage();
+
+      })
 
     let divHeader = document.getElementById("headerTable");
+
+    divHeader.appendChild(btn);
+    divHeader.appendChild(document.createElement("br"));
+
     divHeader.appendChild(name);
     divHeader.appendChild(document.createElement("br"));
     divHeader.appendChild(owner);
@@ -208,7 +232,7 @@ function genMateList(nrPart){
     while( i < nrPart){
         mate = Math.floor(Math.random() * nrPart) ;  //genereaza nr intre 0 si nrPart
         if( i !== mate ){
-            let ok;
+            let ok =1;
             if( i === 0){
                 ok = 1 ;
             }else if( (nrPart - i ) === 2 ){
@@ -315,7 +339,7 @@ async function createTable(){
     let guy ;
 
 
-    for(let i = 0; i < nElem/2;i++){
+    for(let i = 0; i < nElem;i++){
         guy ={
             id :"0",
             name : "a",
@@ -373,6 +397,7 @@ async function loadAllTables(){
         if( ownId === i.ownerId ){
         var btn = document.createElement("Button");
         btn.id = "table-"+i.id;
+        btn.setAttribute("class","button tabBtnM1 tabBtnM2 tabBtnM3");
         btn.innerHTML = i.name;
 
         btn.addEventListener('click', loadTable, true);
